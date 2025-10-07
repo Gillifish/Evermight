@@ -1,4 +1,4 @@
-package org.gillinet.gillidev;
+package org.gillinet.evermight;
 
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -22,7 +22,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 @Mod(GilliDev.MODID)
 public class GilliDev {
-    public static final String MODID = "gillidev";
+    public static final String MODID = "evermight";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // Template example registers (fine to keep)

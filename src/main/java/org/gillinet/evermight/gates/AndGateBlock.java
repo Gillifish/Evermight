@@ -1,4 +1,4 @@
-package org.gillinet.gillidev.gates;
+package org.gillinet.evermight.gates;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
@@ -8,9 +8,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DiodeBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class XorGateBlock extends BaseGateBlock {
-    public static final MapCodec<XorGateBlock> CODEC = Block.simpleCodec(XorGateBlock::new);
-    public XorGateBlock(Properties props) { super(props); }
+public class AndGateBlock extends BaseGateBlock {
+    public static final MapCodec<AndGateBlock> CODEC = Block.simpleCodec(AndGateBlock::new);
+    public AndGateBlock(Properties props) { super(props); }
     @Override protected MapCodec<? extends DiodeBlock> codec() { return CODEC; }
 
     @Override
@@ -18,6 +18,6 @@ public class XorGateBlock extends BaseGateBlock {
         Direction facing = state.getValue(DiodeBlock.FACING);
         int left  = getSideSignal(level, pos, facing.getCounterClockWise());
         int right = getSideSignal(level, pos, facing.getClockWise());
-        return left > 0 ^ right > 0;
+        return left > 0 && right > 0;
     }
 }

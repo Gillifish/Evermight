@@ -1,4 +1,4 @@
-package org.gillinet.gillidev;
+package org.gillinet.evermight;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -7,7 +7,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import org.gillinet.gillidev.gates.*;
+import org.gillinet.evermight.gates.*;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =

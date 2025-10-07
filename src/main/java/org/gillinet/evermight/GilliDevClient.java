@@ -1,4 +1,4 @@
-package org.gillinet.gillidev;
+package org.gillinet.evermight;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
