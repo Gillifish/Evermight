@@ -11,9 +11,9 @@ import org.gillinet.evermight.gates.*;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
-            DeferredRegister.createBlocks(GilliDev.MODID);
+            DeferredRegister.createBlocks(Evermight.MODID);
     public static final DeferredRegister.Items ITEMS =
-            DeferredRegister.createItems(GilliDev.MODID);
+            DeferredRegister.createItems(Evermight.MODID);
 
     public static final DeferredBlock<AndGateBlock> AND_GATE = BLOCKS.register("and_gate",
             () -> new AndGateBlock(BlockBehaviour.Properties.of()

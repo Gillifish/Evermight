@@ -20,8 +20,8 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(GilliDev.MODID)
-public class GilliDev {
+@Mod(Evermight.MODID)
+public class Evermight {
     public static final String MODID = "evermight";
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -32,7 +32,7 @@ public class GilliDev {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
 
-    public GilliDev(IEventBus modEventBus, ModContainer modContainer) {
+    public Evermight(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
         // Register template example stuff
