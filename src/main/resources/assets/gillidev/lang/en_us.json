@@ -1,0 +1,13 @@
+{
+  "itemGroup.gillidev": "Example Mod Tab",
+  "block.gillidev.example_block": "Example Block",
+  "item.gillidev.example_item": "Example Item",
+
+  "gillidev.configuration.title": "GilliDev Configs",
+  "gillidev.configuration.section.gillidev.common.toml": "GilliDev Configs",
+  "gillidev.configuration.section.gillidev.common.toml.title": "GilliDev Configs",
+  "gillidev.configuration.items": "Item List",
+  "gillidev.configuration.logDirtBlock": "Log Dirt Block",
+  "gillidev.configuration.magicNumberIntroduction": "Magic Number Text",
+  "gillidev.configuration.magicNumber": "Magic Number"
+}
