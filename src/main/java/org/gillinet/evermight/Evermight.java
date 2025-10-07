@@ -42,6 +42,7 @@ public class Evermight {
 
         // Register your gates (ModBlocks must own BOTH its Blocks and Items)
         EvermightBlocks.register(modEventBus);
+        EvermightItems.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -63,6 +64,7 @@ public class Evermight {
             event.accept(EvermightBlocks.OR_GATE_ITEM.get());
             event.accept(EvermightBlocks.XOR_GATE_ITEM.get());
             event.accept(EvermightBlocks.NOT_GATE_ITEM.get());
+            event.accept(EvermightItems.THE_SHOVEL_ITEM.get());
         }
     }
 

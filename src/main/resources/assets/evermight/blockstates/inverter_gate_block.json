@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "facing=north,powered=true": {
+            "model": "circuits:block/inverter_gate_block"
+        },
+        "facing=east,powered=true": {
+            "model": "circuits:block/inverter_gate_block", "y": 90
+        },
+        "facing=south,powered=true": {
+            "model": "circuits:block/inverter_gate_block", "y": 180
+        },
+        "facing=west,powered=true": {
+            "model": "circuits:block/inverter_gate_block", "y": 270
+        },
+        "facing=north,powered=false": {
+            "model": "circuits:block/inverter_gate_block"
+        },
+        "facing=east,powered=false": {
+            "model": "circuits:block/inverter_gate_block", "y": 90
+        },
+        "facing=south,powered=false": {
+            "model": "circuits:block/inverter_gate_block", "y": 180
+        },
+        "facing=west,powered=false": {
+            "model": "circuits:block/inverter_gate_block", "y": 270
+        }
+    }
+}

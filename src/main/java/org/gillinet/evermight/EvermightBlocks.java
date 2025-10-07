@@ -9,6 +9,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import org.gillinet.evermight.gates.*;
 
+import static org.gillinet.evermight.EvermightEntities.ENTITIES;
+
 public class EvermightBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Evermight.MODID);
@@ -41,19 +43,20 @@ public class EvermightBlocks {
 
     // Pair BlockItem, registered during the Items phase (safe: Blocks already bound)
     public static final net.neoforged.neoforge.registries.DeferredItem<BlockItem> AND_GATE_ITEM =
-            ITEMS.register("and_gate", () -> new BlockItem(AND_GATE.get(), new Item.Properties()));
+            ITEMS.register("and_gate_item", () -> new BlockItem(AND_GATE.get(), new Item.Properties()));
 
     public static final net.neoforged.neoforge.registries.DeferredItem<BlockItem> OR_GATE_ITEM =
-            ITEMS.register("or_gate", () -> new BlockItem(OR_GATE.get(), new Item.Properties()));
+            ITEMS.register("or_gate_item", () -> new BlockItem(OR_GATE.get(), new Item.Properties()));
 
     public static final net.neoforged.neoforge.registries.DeferredItem<BlockItem> XOR_GATE_ITEM =
-            ITEMS.register("xor_gate", () -> new BlockItem(XOR_GATE.get(), new Item.Properties()));
+            ITEMS.register("xor_gate_item", () -> new BlockItem(XOR_GATE.get(), new Item.Properties()));
 
     public static final net.neoforged.neoforge.registries.DeferredItem<BlockItem> NOT_GATE_ITEM =
-            ITEMS.register("not_gate", () -> new BlockItem(NOT_GATE.get(), new Item.Properties()));
+            ITEMS.register("not_gate_item", () -> new BlockItem(NOT_GATE.get(), new Item.Properties()));
 
     public static void register(IEventBus bus) {
         BLOCKS.register(bus);
         ITEMS.register(bus);
+        ENTITIES.register(bus);
     }
 }
