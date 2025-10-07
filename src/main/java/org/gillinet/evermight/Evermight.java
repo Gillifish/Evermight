@@ -41,7 +41,7 @@ public class Evermight {
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register your gates (ModBlocks must own BOTH its Blocks and Items)
-        ModBlocks.register(modEventBus);
+        EvermightBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -52,21 +52,17 @@ public class Evermight {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
+        LOGGER.info("HELLO FROM EVERMIGHT");
         Config.ITEM_STRINGS.get().forEach(item -> LOGGER.info("ITEM >> {}", item));
     }
 
     // Put gate items into the Redstone tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-            event.accept(ModBlocks.AND_GATE_ITEM.get());
-            event.accept(ModBlocks.OR_GATE_ITEM.get());
-            event.accept(ModBlocks.XOR_GATE_ITEM.get());
-            event.accept(ModBlocks.NOT_GATE_ITEM.get());
+            event.accept(EvermightBlocks.AND_GATE_ITEM.get());
+            event.accept(EvermightBlocks.OR_GATE_ITEM.get());
+            event.accept(EvermightBlocks.XOR_GATE_ITEM.get());
+            event.accept(EvermightBlocks.NOT_GATE_ITEM.get());
         }
     }
 

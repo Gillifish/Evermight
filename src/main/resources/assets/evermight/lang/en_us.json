@@ -1,0 +1,10 @@
+{
+  "itemGroup.evermight": "Evermight",
+  "block.evermight.and_gate": "AND Gate",
+  "item.evermight.and_gate": "AND Gate",
+
+  "evermight.configuration.title": "Evermight Configs",
+  "evermight.configuration.section.evermight.common.toml": "Evermight Configs",
+  "evermight.configuration.section.evermight.common.toml.title": "Evermight Configs",
+  "evermight.configuration.items": "Item List"
+}
