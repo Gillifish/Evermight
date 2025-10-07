@@ -12,12 +12,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.gillinet.evermight.weapons.TheShovel;
 import org.gillinet.evermight.weapons.TheShovelItem;
 
-public final class EvermightItems {
-    // Dedicated Items register for this class (separate from any template registers in GilliDev)
+public class EvermightItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(Evermight.MODID);
 
-    // Your special trident-like item
     public static final DeferredItem<TheShovelItem> THE_SHOVEL_ITEM =
             ITEMS.register("the_shovel",
                     () -> new TheShovelItem(new Item.Properties()

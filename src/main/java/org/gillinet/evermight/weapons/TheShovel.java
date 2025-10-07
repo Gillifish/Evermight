@@ -39,7 +39,6 @@ public class TheShovel extends ThrownTrident {
         if (!level().isClientSide) {
             strikeLightning(hit.getLocation());
         }
-        // Don't discard here—let Loyalty handle return (vanilla behavior).
     }
 
     @Override
@@ -49,7 +48,7 @@ public class TheShovel extends ThrownTrident {
             // strike at impact point or the block top center—your call
             Vec3 p = Vec3.atCenterOf(hit.getBlockPos());
             strikeLightning(p);
-            boom(hit.getLocation(), 5.0F, /*breakBlocks*/ false, /*setFire*/ true);
+            boom(hit.getLocation(), 5.0F, false, false);
         }
     }
 
